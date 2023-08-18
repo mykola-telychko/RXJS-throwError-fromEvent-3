@@ -10,6 +10,8 @@ import {
   exhaustMap,
 } from 'rxjs/operators';
 
+// https://www.learnrxjs.io/learn-rxjs/operators/error_handling/catch
+
 const fakeRequest$ = of().pipe(
   tap((_) => console.log('fakeRequest')),
   throwError
